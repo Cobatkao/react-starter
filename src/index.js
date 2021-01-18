@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { GlobalStyle } from './style.js';
 import reportWebVitals from './reportWebVitals';
+import './statics/iconfont/iconfont.js'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Fragment>
     <App />
-  </React.StrictMode>,
+    <GlobalStyle />
+  </Fragment>,
   document.getElementById('root')
 );
 
